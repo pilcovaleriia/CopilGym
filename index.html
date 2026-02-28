@@ -24,10 +24,13 @@
             </a>
 
             <ul class="nav-links" id="navLinks">
-                <li><a href="#hero" class="nav-link active">Inicio</a></li>
-                <li><a href="#sedes" class="nav-link">Sedes</a></li>
-                <li><a href="#planes" class="nav-link">Planes</a></li>
-                <li><a href="#servicios" class="nav-link">Servicios</a></li>
+                <li class="nav-item"><a href="#hero" class="nav-link active">Inicio</a></li>
+                <li class="nav-item"><a href="#sedes" class="nav-link">Sedes</a></li>
+                <li class="nav-item"><a href="#horarios" class="nav-link">Horarios</a></li>
+                <li class="nav-item"><a href="#entrenadores" class="nav-link">Staff</a></li>
+                <li class="nav-item"><a href="#planes" class="nav-link">Planes</a></li>
+                <li class="nav-item"><a href="#galeria" class="nav-link">Galería</a></li>
+                <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li>
                 <li><a href="#contacto" class="nav-link">Contacto</a></li>
             </ul>
 
@@ -154,7 +157,7 @@
                         <h3 id="nearestName"></h3>
                         <p id="nearestAddress"></p>
                         <p class="result-distance" id="nearestDistance"></p>
-                        <a href="https://wa.me/15551234567?text=Hola!%20Quiero%20info%20sobre%20la%20sede%20más%20cercana"
+                        <a href="https://wa.me/51975984304?text=Hola!%20Quiero%20info%20sobre%20la%20sede%20más%20cercana"
                             class="btn btn-primary btn-small" target="_blank">
                             Contactar por WhatsApp →
                         </a>
@@ -164,7 +167,7 @@
 
             <div class="sedes-grid">
                 <div class="sede-card" data-aos data-lat="19.4326" data-lng="-99.1332">
-                    <div class="sede-image" style="background: linear-gradient(135deg, #ff6b35, #f7931e);">
+                    <div class="sede-image" style="background: linear-gradient(135deg, #00e5ff, #2979ff);">
                         <div class="sede-badge">⭐ FLAGSHIP</div>
                         <div class="sede-icon-img">🏋️</div>
                     </div>
@@ -183,7 +186,7 @@
                     </div>
                 </div>
                 <div class="sede-card" data-aos data-lat="19.5000" data-lng="-99.1500">
-                    <div class="sede-image" style="background: linear-gradient(135deg, #6c5ce7, #a855f7);">
+                    <div class="sede-image" style="background: linear-gradient(135deg, #6c5ce7, #d500f9);">
                         <div class="sede-badge">🆕 NUEVA</div>
                         <div class="sede-icon-img">💪</div>
                     </div>
@@ -202,7 +205,7 @@
                     </div>
                 </div>
                 <div class="sede-card" data-aos data-lat="19.3600" data-lng="-99.1400">
-                    <div class="sede-image" style="background: linear-gradient(135deg, #00b894, #00cec9);">
+                    <div class="sede-image" style="background: linear-gradient(135deg, #00e676, #00e5ff);">
                         <div class="sede-icon-img">🥊</div>
                     </div>
                     <div class="sede-info">
@@ -301,7 +304,7 @@
                         <li class="excluded">❌ Acceso a piscina</li>
                         <li class="excluded">❌ Spa & Sauna</li>
                     </ul>
-                    <a href="https://wa.me/15551234567?text=Hola!%20Me%20interesa%20el%20plan%20Básico"
+                    <a href="https://wa.me/51975984304?text=Hola!%20Me%20interesa%20el%20plan%20Básico"
                         class="btn btn-plan" target="_blank">Elegir Plan</a>
                 </div>
 
@@ -328,7 +331,7 @@
                         <li class="excluded">❌ Acceso a piscina</li>
                         <li class="excluded">❌ Spa & Sauna</li>
                     </ul>
-                    <a href="https://wa.me/15551234567?text=Hola!%20Me%20interesa%20el%20plan%20Premium"
+                    <a href="https://wa.me/51975984304?text=Hola!%20Me%20interesa%20el%20plan%20Premium"
                         class="btn btn-primary btn-plan" target="_blank">Elegir Plan</a>
                 </div>
 
@@ -355,7 +358,7 @@
                         <li class="included">✅ Parking preferencial</li>
                         <li class="included">✅ Invitados gratis (2/mes)</li>
                     </ul>
-                    <a href="https://wa.me/15551234567?text=Hola!%20Me%20interesa%20el%20plan%20Élite"
+                    <a href="https://wa.me/51975984304?text=Hola!%20Me%20interesa%20el%20plan%20Élite"
                         class="btn btn-plan btn-elite" target="_blank">Elegir Plan</a>
                 </div>
             </div>
@@ -493,6 +496,196 @@
         <div class="carousel-indicators" id="carouselIndicators"></div>
     </section>
 
+    <!-- ========== HORARIOS DE CLASES ========== -->
+    <section id="horarios" class="section horarios">
+        <div class="container">
+            <div class="section-header scroll-animate anim-fade-up">
+                <span class="section-tag">📅 CALENDARIO</span>
+                <h2 class="section-title">Horarios de <span class="gradient-text">Clases</span></h2>
+                <p class="section-desc">Encuentra tu actividad favorita y reserva tu lugar. Más de 50 clases a la
+                    semana.</p>
+            </div>
+
+            <div class="schedule-tabs scroll-animate anim-fade-up" style="transition-delay: 0.2s;">
+                <button class="tab-btn active" data-day="lunes">Lunes</button>
+                <button class="tab-btn" data-day="martes">Martes</button>
+                <button class="tab-btn" data-day="miercoles">Miércoles</button>
+                <button class="tab-btn" data-day="jueves">Jueves</button>
+                <button class="tab-btn" data-day="viernes">Viernes</button>
+                <button class="tab-btn" data-day="sabado">Sábado</button>
+            </div>
+
+            <div class="schedule-content active" id="lunes">
+                <div class="schedule-grid">
+                    <div class="schedule-card scroll-animate anim-scale-up">
+                        <div class="time">06:00 AM</div>
+                        <div class="class-info">
+                            <h4>Spinning Intense</h4>
+                            <span>Con Carlos Mendoza</span>
+                            <span class="room">🚴‍ Sala 1</span>
+                        </div>
+                    </div>
+                    <div class="schedule-card scroll-animate anim-scale-up" style="transition-delay: 0.1s;">
+                        <div class="time">08:00 AM</div>
+                        <div class="class-info">
+                            <h4>Yoga Flow</h4>
+                            <span>Con Ana Sofía</span>
+                            <span class="room">🧘 Zen Room</span>
+                        </div>
+                    </div>
+                    <div class="schedule-card scroll-animate anim-scale-up" style="transition-delay: 0.2s;">
+                        <div class="time">05:00 PM</div>
+                        <div class="class-info">
+                            <h4>CrossFit WOD</h4>
+                            <span>Con Marcos Díaz</span>
+                            <span class="room">🏋️ Box Principal</span>
+                        </div>
+                    </div>
+                    <div class="schedule-card scroll-animate anim-scale-up" style="transition-delay: 0.3s;">
+                        <div class="time">07:30 PM</div>
+                        <div class="class-info">
+                            <h4>Body Combat</h4>
+                            <span>Con Luis Torres</span>
+                            <span class="room">🥊 Sala 2</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="schedule-content" id="martes">
+                <div class="schedule-grid">
+                    <div class="schedule-card">
+                        <div class="time">07:00 AM</div>
+                        <div class="class-info">
+                            <h4>Pilates Core</h4>
+                            <span>Con Laura Gómez</span>
+                            <span class="room">🧘 Zen Room</span>
+                        </div>
+                    </div>
+                    <div class="schedule-card">
+                        <div class="time">10:00 AM</div>
+                        <div class="class-info">
+                            <h4>Zumba Fitness</h4>
+                            <span>Con Diego Ruiz</span>
+                            <span class="room">💃 Sala 1</span>
+                        </div>
+                    </div>
+                    <div class="schedule-card">
+                        <div class="time">06:00 PM</div>
+                        <div class="class-info">
+                            <h4>Funcional Force</h4>
+                            <span>Con Marcos Díaz</span>
+                            <span class="room">🏋️ Box Principal</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Otros días (Miercoles a Sab) simplificados para no recargar HTML, JS los manejará igual -->
+            <div class="schedule-content" id="miercoles">
+                <div class="schedule-empty">Mismos horarios que Lunes</div>
+            </div>
+            <div class="schedule-content" id="jueves">
+                <div class="schedule-empty">Mismos horarios que Martes</div>
+            </div>
+            <div class="schedule-content" id="viernes">
+                <div class="schedule-empty">Horarios de Lunes, cierre 9:00 PM</div>
+            </div>
+            <div class="schedule-content" id="sabado">
+                <div class="schedule-grid">
+                    <div class="schedule-card">
+                        <div class="time">09:00 AM</div>
+                        <div class="class-info">
+                            <h4>Yoga Restaurativo</h4>
+                            <span>Con Ana Sofía</span>
+                            <span class="room">🧘 Zen Room</span>
+                        </div>
+                    </div>
+                    <div class="schedule-card">
+                        <div class="time">11:00 AM</div>
+                        <div class="class-info">
+                            <h4>Masterclass Zumba</h4>
+                            <span>Con Diego Ruiz</span>
+                            <span class="room">💃 Sala Principal</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ENTRENADORES ========== -->
+    <section id="entrenadores" class="section entrenadores">
+        <div class="container">
+            <div class="section-header scroll-animate anim-fade-up">
+                <span class="section-tag">💪 NUESTRO EQUIPO</span>
+                <h2 class="section-title">Entrenadores de <span class="gradient-text">Élite</span></h2>
+                <p class="section-desc">Profesionales certificados enfocados en llevarte a tu máximo nivel.</p>
+            </div>
+
+            <div class="team-grid">
+                <div class="team-card scroll-animate anim-fade-up">
+                    <div class="team-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=400&h=500&fit=crop"
+                            alt="Entrenador Marcos" class="team-img">
+                        <div class="team-social">
+                            <a href="#">📸</a>
+                            <a href="#">🎵</a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Marcos Díaz</h3>
+                        <span>Head Coach & CrossFit</span>
+                    </div>
+                </div>
+
+                <div class="team-card scroll-animate anim-fade-up" style="transition-delay: 0.15s;">
+                    <div class="team-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?w=400&h=500&fit=crop"
+                            alt="Entrenadora Ana" class="team-img">
+                        <div class="team-social">
+                            <a href="#">📸</a>
+                            <a href="#">📘</a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Ana Sofía</h3>
+                        <span>Especialista RYT-500 Yoga</span>
+                    </div>
+                </div>
+
+                <div class="team-card scroll-animate anim-fade-up" style="transition-delay: 0.3s;">
+                    <div class="team-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=400&h=500&fit=crop"
+                            alt="Entrenador Carlos" class="team-img">
+                        <div class="team-social">
+                            <a href="#">📸</a>
+                            <a href="#">▶️</a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Carlos Mendoza</h3>
+                        <span>Hipertrofia y Nutrición</span>
+                    </div>
+                </div>
+
+                <div class="team-card scroll-animate anim-fade-up" style="transition-delay: 0.45s;">
+                    <div class="team-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=400&h=500&fit=crop"
+                            alt="Entrenadora Laura" class="team-img">
+                        <div class="team-social">
+                            <a href="#">📸</a>
+                            <a href="#">🎵</a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Laura Gómez</h3>
+                        <span>Pilates y Core Training</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- ========== TESTIMONIOS ========== -->
     <section class="section testimonios">
         <div class="container">
@@ -506,7 +699,7 @@
                     <p class="testimonio-text">"Llevo 2 años en Copil GYM y ha cambiado mi vida. Los entrenadores son
                         increíbles y las instalaciones de primer nivel."</p>
                     <div class="testimonio-author">
-                        <div class="author-avatar" style="background: linear-gradient(135deg, #ff6b35, #f7931e);">CM
+                        <div class="author-avatar" style="background: linear-gradient(135deg, #00e5ff, #2979ff);">CM
                         </div>
                         <div>
                             <strong>Carlos Mendoza</strong>
@@ -519,7 +712,7 @@
                     <p class="testimonio-text">"Las clases grupales son lo mejor. El ambiente es súper motivador y he
                         logrado resultados que nunca imaginé."</p>
                     <div class="testimonio-author">
-                        <div class="author-avatar" style="background: linear-gradient(135deg, #a855f7, #6c5ce7);">AL
+                        <div class="author-avatar" style="background: linear-gradient(135deg, #d500f9, #6c5ce7);">AL
                         </div>
                         <div>
                             <strong>Ana López</strong>
@@ -532,12 +725,140 @@
                     <p class="testimonio-text">"El plan nutricional personalizado más el entrenamiento ha sido clave.
                         Perdí 15 kg en 6 meses. ¡Totalmente recomendado!"</p>
                     <div class="testimonio-author">
-                        <div class="author-avatar" style="background: linear-gradient(135deg, #00b894, #00cec9);">RG
+                        <div class="author-avatar" style="background: linear-gradient(135deg, #00e676, #00e5ff);">RG
                         </div>
                         <div>
                             <strong>Roberto García</strong>
                             <span>Miembro Premium</span>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== GALERÍA ========== -->
+    <section id="galeria" class="section galeria">
+        <div class="container">
+            <div class="section-header scroll-animate anim-fade-up">
+                <span class="section-tag">📸 INSTALACIONES</span>
+                <h2 class="section-title">Conoce <span class="gradient-text">Nuestro Espacio</span></h2>
+                <p class="section-desc">Instalaciones de primer nivel diseñadas para maximizar tu rendimiento deportivo.
+                </p>
+            </div>
+
+            <div class="gallery-bento">
+                <div class="bento-item bento-large scroll-animate anim-fade-up">
+                    <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&h=600&fit=crop"
+                        alt="Gym Area Principal" loading="lazy">
+                    <div class="bento-overlay">
+                        <span>Área Principal de Pesas</span>
+                    </div>
+                </div>
+                <div class="bento-item scroll-animate anim-fade-up" style="transition-delay: 0.15s;">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=400&fit=crop"
+                        alt="CrossFit Box" loading="lazy">
+                    <div class="bento-overlay">
+                        <span>Box de CrossFit</span>
+                    </div>
+                </div>
+                <div class="bento-item scroll-animate anim-fade-up" style="transition-delay: 0.3s;">
+                    <img src="images/pool.png" alt="Piscina" loading="lazy">
+                    <div class="bento-overlay">
+                        <span>Piscina Semi-olímpica</span>
+                    </div>
+                </div>
+                <div class="bento-item bento-wide scroll-animate anim-fade-up" style="transition-delay: 0.45s;">
+                    <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=800&h=400&fit=crop"
+                        alt="Yoga Studio" loading="lazy">
+                    <div class="bento-overlay">
+                        <span>Zen Studio para Yoga y Pilates</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CALCULADORA IMC ========== -->
+    <section id="bmi" class="section bmi">
+        <div class="container">
+            <div class="bmi-wrapper scroll-animate anim-scale-up">
+                <div class="bmi-content">
+                    <span class="section-tag">🧮 HERRAMIENTA</span>
+                    <h2 class="section-title" style="text-align:left;">Calcula tu <br><span class="gradient-text">Índice
+                            de Masa</span> Corporala</h2>
+                    <p>Conocer tu IMC (BMI) es el primer paso para definir tu plan de entrenamiento ideal. Rellena tus
+                        datos y descubre cómo podemos ayudarte.</p>
+
+                    <form id="bmiForm" class="bmi-form">
+                        <div class="form-group">
+                            <label for="height">Altura (cm)</label>
+                            <input type="number" id="height" placeholder="Ej: 175" required min="100" max="250">
+                        </div>
+                        <div class="form-group">
+                            <label for="weight">Peso (kg)</label>
+                            <input type="number" id="weight" placeholder="Ej: 70" required min="30" max="300">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Calcular mi IMC</button>
+                    </form>
+                </div>
+
+                <div class="bmi-result-card">
+                    <div class="bmi-display">
+                        <span id="bmiScore">0.0</span>
+                    </div>
+                    <div id="bmiText" class="bmi-text">
+                        <h3>Ingresa tus datos</h4>
+                            <p>Para ver tu resultado y la recomendación de nuestro equipo.</p>
+                    </div>
+                    <img src="images/hero.png" alt="BMI Graphic" class="bmi-graphic">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FAQ ========== -->
+    <section id="faq" class="section faq">
+        <div class="container">
+            <div class="section-header scroll-animate anim-fade-up">
+                <span class="section-tag">💡 DUDAS FRECUENTES</span>
+                <h2 class="section-title">Preguntas <span class="gradient-text">Frecuentes</span></h2>
+            </div>
+
+            <div class="faq-list">
+                <div class="faq-item scroll-animate anim-fade-up">
+                    <button class="faq-question">
+                        <span>¿Hay penalidad por cancelar mi membresía?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>No, en Copil GYM no creemos en contratos amarrados. Puedes congelar o cancelar tu plan
+                            mensual en cualquier momento avisando con 5 días hábiles de anticipación a tu fecha de
+                            corte, sin recargos ocultos.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item scroll-animate anim-fade-up" style="transition-delay: 0.1s;">
+                    <button class="faq-question">
+                        <span>¿Qué incluye la evaluación física del plan Élite?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Incluye una medición completa de bioimpedancia (porcentaje de grasa, masa muscular, grasa
+                            visceral), test de fuerza y resistencia, y una entrevista de 40 minutos con nuestro
+                            nutricionista deportivo para armar tu plan a medida.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item scroll-animate anim-fade-up" style="transition-delay: 0.2s;">
+                    <button class="faq-question">
+                        <span>¿Debo llevar candado para los casilleros?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sí, por seguridad cada usuario debe traer su propio candado. Sin embargo, en las sedes
+                            Premium contamos con casilleros digitales que funcionan mediante un código PIN o pulsera
+                            NFC.</p>
                     </div>
                 </div>
             </div>
@@ -565,7 +886,7 @@
                             <span class="info-icon">📱</span>
                             <div>
                                 <strong>Teléfono</strong>
-                                <span>+1 (555) 123-4567</span>
+                                <span>+51 975 984 304</span>
                             </div>
                         </div>
                         <div class="info-item">
@@ -599,29 +920,29 @@
                             cualquier duda.</p>
 
                         <div class="wa-quick-options">
-                            <a href="https://wa.me/15551234567?text=Hola!%20Quiero%20información%20sobre%20las%20membresías%20de%20Copil%20GYM"
+                            <a href="https://wa.me/51975984304?text=Hola!%20Quiero%20información%20sobre%20las%20membresías%20de%20Copil%20GYM"
                                 class="wa-option" target="_blank">
                                 <span class="wa-option-icon">💎</span>
                                 <span>Info de Membresías</span>
                             </a>
-                            <a href="https://wa.me/15551234567?text=Hola!%20Quiero%20agendar%20una%20visita%20a%20Copil%20GYM"
+                            <a href="https://wa.me/51975984304?text=Hola!%20Quiero%20agendar%20una%20visita%20a%20Copil%20GYM"
                                 class="wa-option" target="_blank">
                                 <span class="wa-option-icon">📅</span>
                                 <span>Agendar Visita</span>
                             </a>
-                            <a href="https://wa.me/15551234567?text=Hola!%20Quiero%20un%20pase%20de%20prueba%20gratuito%20en%20Copil%20GYM"
+                            <a href="https://wa.me/51975984304?text=Hola!%20Quiero%20un%20pase%20de%20prueba%20gratuito%20en%20Copil%20GYM"
                                 class="wa-option" target="_blank">
                                 <span class="wa-option-icon">🎟️</span>
                                 <span>Pase de Prueba Gratis</span>
                             </a>
-                            <a href="https://wa.me/15551234567?text=Hola!%20Tengo%20una%20consulta%20sobre%20Copil%20GYM"
+                            <a href="https://wa.me/51975984304?text=Hola!%20Tengo%20una%20consulta%20sobre%20Copil%20GYM"
                                 class="wa-option" target="_blank">
                                 <span class="wa-option-icon">❓</span>
                                 <span>Otra Consulta</span>
                             </a>
                         </div>
 
-                        <a href="https://wa.me/15551234567?text=Hola!%20Quiero%20saber%20más%20sobre%20Copil%20GYM"
+                        <a href="https://wa.me/51975984304?text=Hola!%20Quiero%20saber%20más%20sobre%20Copil%20GYM"
                             class="btn wa-main-btn" target="_blank">
                             <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
                                 <path
@@ -636,7 +957,7 @@
     </section>
 
     <!-- ========== WHATSAPP FLOTANTE ========== -->
-    <a href="https://wa.me/15551234567?text=Hola!%20Quiero%20info%20sobre%20Copil%20GYM" class="whatsapp-float"
+    <a href="https://wa.me/51975984304?text=Hola!%20Quiero%20info%20sobre%20Copil%20GYM" class="whatsapp-float"
         target="_blank" aria-label="Contactar por WhatsApp" id="waFloat">
         <svg width="28" height="28" viewBox="0 0 24 24" fill="#fff">
             <path

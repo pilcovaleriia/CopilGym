@@ -469,3 +469,97 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+// ========================================
+// SCHEDULE TABS LOGIC
+// ========================================
+const tabBtns = document.querySelectorAll('.tab-btn');
+const scheduleContents = document.querySelectorAll('.schedule-content');
+
+tabBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        // Remove active class from all buttons and contents
+        tabBtns.forEach(b => b.classList.remove('active'));
+        scheduleContents.forEach(c => c.classList.remove('active'));
+
+        // Add active class to clicked button
+        btn.classList.add('active');
+
+        // Show corresponding schedule
+        const day = btn.getAttribute('data-day');
+        document.getElementById(day).classList.add('active');
+    });
+});
+
+// ========================================
+// BMI CALCULATOR LOGIC
+// ========================================
+const bmiForm = document.getElementById('bmiForm');
+const heightInput = document.getElementById('height');
+const weightInput = document.getElementById('weight');
+const bmiScore = document.getElementById('bmiScore');
+const bmiText = document.getElementById('bmiText');
+
+if (bmiForm) {
+    bmiForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const heightInMeters = parseFloat(heightInput.value) / 100;
+        const weight = parseFloat(weightInput.value);
+
+        if (heightInMeters > 0 && weight > 0) {
+            const bmi = weight / (heightInMeters * heightInMeters);
+            bmiScore.textContent = bmi.toFixed(1);
+
+            let category = '';
+            let message = '';
+            let color = '';
+
+            if (bmi < 18.5) {
+                category = 'Bajo peso';
+                message = 'Te recomendamos nuestro plan de Hipertrofia y Nutrición.';
+                color = '#00e5ff'; // Cyan
+            } else if (bmi >= 18.5 && bmi <= 24.9) {
+                category = 'Peso Normal';
+                message = '¡Excelente! Mantente en forma con nuestras clases funcionales.';
+                color = '#00e676'; // Green
+            } else if (bmi >= 25 && bmi <= 29.9) {
+                category = 'Sobrepeso';
+                message = 'El Plan Premium con rutinas HIIT es ideal para ti.';
+                color = '#ff9800'; // Orange
+            } else {
+                category = 'Obesidad';
+                message = 'Nuestros entrenadores personales diseñarán un plan seguro para ti.';
+                color = '#f44336'; // Red
+            }
+
+            bmiText.innerHTML = `<h3 style="color:${color};">${category}</h3><p>${message}</p>`;
+        }
+    });
+}
+
+// ========================================
+// FAQ ACCORDION LOGIC
+// ========================================
+const faqItems = document.querySelectorAll('.faq-item');
+
+faqItems.forEach(item => {
+    const question = item.querySelector('.faq-question');
+    const answer = item.querySelector('.faq-answer');
+
+    question.addEventListener('click', () => {
+        const isActive = item.classList.contains('active');
+
+        // Close all items
+        faqItems.forEach(faq => {
+            faq.classList.remove('active');
+            faq.querySelector('.faq-answer').style.maxHeight = null;
+        });
+
+        // If it wasn't active, open it
+        if (!isActive) {
+            item.classList.add('active');
+            answer.style.maxHeight = answer.scrollHeight + "px";
+        }
+    });
+});
