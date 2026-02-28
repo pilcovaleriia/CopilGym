@@ -220,35 +220,8 @@ planToggle.addEventListener('change', () => {
     });
 });
 
-// ===== TESTIMONIALS CAROUSEL =====
-const testimonioCards = document.querySelectorAll('.testimonio-card');
-const dots = document.querySelectorAll('.dot');
-let currentTestimonial = 0;
-let testimonialInterval;
-
-function showTestimonial(index) {
-    testimonioCards.forEach((card, i) => {
-        card.classList.remove('active');
-        dots[i].classList.remove('active');
-    });
-    testimonioCards[index].classList.add('active');
-    dots[index].classList.add('active');
-    currentTestimonial = index;
-}
-
-function nextTestimonial() {
-    showTestimonial((currentTestimonial + 1) % testimonioCards.length);
-}
-
-dots.forEach(dot => {
-    dot.addEventListener('click', () => {
-        clearInterval(testimonialInterval);
-        showTestimonial(parseInt(dot.dataset.index));
-        testimonialInterval = setInterval(nextTestimonial, 5000);
-    });
-});
-
-testimonialInterval = setInterval(nextTestimonial, 5000);
+// ===== TESTIMONIALS (Migrated to Grid - No JS needed) =====
+// The testimonial carousel was removed in favor of a responsive CSS grid block.
 
 // ===== HERO PARTICLES =====
 function createParticles() {
